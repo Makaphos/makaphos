@@ -3,10 +3,9 @@ body {
   font-family: Arial, sans-serif;
   color: #191970;
 }
-
 .kartu-profil {
   width: 300px
-  margin: 50px auto;
+    margin: 50px auto;
   padding: 20px
   backgdoun-color: white;
   border-radius: 15px
@@ -14,7 +13,7 @@ body {
 }
 .kartu-profil img {
   width: 170px;
-  border-radius: 40%;
+  border-radius: 20%;
 }
 .kartu-profil {
   text-align: center;
