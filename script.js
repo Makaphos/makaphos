@@ -1,4 +1,4 @@
-const tombol sapa = document.gelElementBlyd('sapaButton')
+const tombolSapa = document.gelElementBlyd('sapaButton')
 tombolsapa.addEventListener('click",fuction(){
                             alert('suwon wes mampir');
 });
