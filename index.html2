@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phosphophyllite - Houseki no Kuni Fanpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app-container">
+        
+        <section id="page-1" class="page active">
+            <div class="header-bar">
+                <span class="title">Phosphophyllite</span>
+            </div>
+            <div class="content-box">
+                <div class="main-image">
+                    <img src="foto_halaman_1.png" alt="foto halaman 1">
+                </div>
+                <div class="button-container">
+                    <button class="nav-button" data-target="page-2">Forms</button>
+                    <button class="nav-button" data-target="page-4">Friends</button>
+                    <button class="nav-button" data-target="page-3">Anatomy</button>
+                </div>
+            </div>
+            <div class="footer-text">
+                houseki no kuni
+            </div>
+        </section>
+
+        <section id="page-2" class="page">
+            <div class="header-bar">
+                <span class="title">Phosphophyllite</span>
+                <button class="nav-home-button" data-target="page-1">home</button>
+            </div>
+            <div class="content-box">
+                <div class="main-image-full">
+                    <img src="foto_halaman_2.png" alt="foto halaman 2">
+                </div>
+                <p class="formula-text">Zn2Fe(PO4)2·4H2O</p>
+                <p class="forms-text">ALL FORMS</p>
+            </div>
+            <div class="footer-text">
+                houseki no kuni
+            </div>
+        </section>
+
+        <section id="page-3" class="page">
+            <div class="header-bar">
+                <span class="title">Phosphophyllite</span>
+                <button class="nav-home-button" data-target="page-1">home</button>
+            </div>
+            <div class="content-box">
+                <div class="main-image-full">
+                    <img src="foto_halaman_3.png" alt="foto halaman 3">
+                </div>
+                <p class="anatomy-title">Anatomy</p>
+            </div>
+            <div class="footer-text">
+                houseki no kuni
+            </div>
+        </section>
+
+        <section id="page-4" class="page">
+            <div class="header-bar">
+                <span class="title">Phosphophyllite</span>
+                <button class="nav-home-button" data-target="page-1">home</button>
+            </div>
+            <div class="content-box">
+                <div class="main-image-full">
+                    <img src="foto_halaman_4.png" alt="foto halaman 4">
+                </div>
+            </div>
+            <div class="footer-text">
+                houseki no kuni
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
