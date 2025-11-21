@@ -1,0 +1,278 @@
+/* ==================================== */
+/* 1. RESET DAN DASAR-DASAR */
+/* ==================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8; /* Warna latar belakang ringan */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==================================== */
+/* 2. HEADER/NAVIGASI */
+/* ==================================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
+    position: sticky; /* Membuat header tetap di atas */
+    top: 0;
+    z-index: 100;
+    height: 60px; /* Tinggi standar header */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Mengambil ruang yang tersedia */
+    max-width: 700px;
+    margin-right: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #cc0000; /* Warna khas Pinterest */
+    margin-right: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: #efefef;
+    font-size: 16px;
+    outline: none; /* Hilangkan garis biru saat fokus */
+}
+
+.main-nav {
+    display: flex;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-item.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.user-tools {
+    display: flex;
+    align-items: center;
+}
+
+.tool-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 8px;
+    transition: background-color 0.2s;
+}
+
+.tool-btn:hover {
+    background-color: #efefef;
+}
+
+.profile-link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+
+/* ==================================== */
+/* 3. TATA LETAK UTAMA (GALERI) */
+/* ==================================== */
+.gallery-container {
+    display: flex;
+    padding: 20px;
+    max-width: 1600px; /* Lebar maksimal konten */
+    margin: 0 auto;
+}
+
+/* Kolom Pin Utama/Besar (Kiri) */
+.large-pin {
+    width: 50%; /* Pin besar mengambil sekitar 50% ruang */
+    max-width: 600px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Penting untuk radius */
+}
+
+.large-pin .image-wrapper {
+    position: relative;
+    max-height: 80vh; /* Agar tidak terlalu tinggi */
+    overflow: hidden;
+}
+
+.large-pin img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.large-pin .actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    opacity: 0; /* Sembunyikan default */
+    transition: opacity 0.3s;
+}
+
+.large-pin:hover .actions {
+    opacity: 1; /* Tampilkan saat hover */
+}
+
+.large-pin .action-btn {
+    padding: 10px 15px;
+    background-color: #cc0000;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.large-pin .pin-info {
+    padding: 15px;
+}
+
+.large-pin .source-link {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.large-pin .pin-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* Area Grid Pin Kecil (Kanan) - MASONRY LAYOUT */
+.masonry-grid {
+    flex-grow: 1;
+    /* Teknik Masonry menggunakan CSS Columns */
+    column-count: 4; /* Jumlah kolom default */
+    column-gap: 15px; /* Jarak antar kolom */
+    width: 100%;
+}
+
+.pin-item {
+    display: inline-block; /* Penting untuk kolom */
+    width: 100%; /* Agar pin mengisi lebar kolom */
+    margin-bottom: 15px; /* Jarak di bawah setiap pin */
+    background-color: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    
+    /* Penting: Mencegah pin terpotong di tengah kolom */
+    break-inside: avoid;
+    -webkit-break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.pin-item:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pin-item .image-wrapper {
+    /* Hanya untuk memastikan gambar mengisi kontainer */
+    width: 100%;
+    height: auto;
+}
+
+.pin-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pin-caption {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* ==================================== */
+/* 4. RESPONSIF (Media Queries) */
+/* ==================================== */
+
+/* Tablet/Layar Sedang */
+@media (max-width: 1200px) {
+    .masonry-grid {
+        column-count: 3; /* Kurangi kolom menjadi 3 */
+    }
+}
+
+/* Ponsel/Layar Kecil */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    .search-bar {
+        order: 2; /* Pindah search bar ke bawah */
+        flex-basis: 100%; /* Ambil lebar penuh */
+        margin: 10px 0;
+    }
+    
+    .main-nav {
+        display: none; /* Sembunyikan navigasi utama pada ponsel */
+    }
+
+    .gallery-container {
+        flex-direction: column; /* Ubah tata letak menjadi kolom tunggal */
+        padding: 10px;
+    }
+    
+    .large-pin {
+        width: 100%; /* Pin besar ambil lebar penuh */
+        max-width: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .masonry-grid {
+        column-count: 2; /* Kurangi kolom grid menjadi 2 */
+        column-gap: 10px;
+    }
+}
