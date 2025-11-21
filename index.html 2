@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Gaya Pin</title>
+    </head>
+<body>
+
+    <header class="header">
+        <div class="search-bar">
+            <a href="#" class="logo">P</a>
+            <input type="text" placeholder="Cari">
+        </div>
+        <nav class="main-nav">
+            <a href="#" class="nav-item active">Beranda</a>
+            <a href="#" class="nav-item">Hari Ini</a>
+            </nav>
+        <div class="user-tools">
+            <button class="tool-btn" aria-label="Notifikasi">🔔</button>
+            <button class="tool-btn" aria-label="Pesan">💬</button>
+            <a href="#" class="profile-link">
+                <img src="path/to/profile-pic.jpg" alt="Profil Pengguna">
+            </a>
+            <button class="tool-btn" aria-label="Menu Akun">▼</button>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        
+        <div class="pin-item large-pin">
+            <div class="image-wrapper">
+                <img src="path/to/image_821b26_main_pin.jpg" alt="Gambar Pin Utama - Karakter Kristal Biru">
+                <div class="actions">
+                    <button class="action-btn">Simpan</button>
+                </div>
+            </div>
+            <div class="pin-info">
+                <p class="source-link">deadpurity (@deadpurity1) on X</p>
+                <div class="pin-meta">
+                    <span class="likes">❤️ 10</span>
+                    <span class="shares">⬆️</span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="masonry-grid">
+            
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin1.jpg" alt="Shime is Crystal Age Webtoon">
+                </div>
+                <p class="pin-caption">Shime is Crystal Age Webtoon</p>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin2.jpg" alt="Gambar Pin - Karakter Putih Merah">
+                </div>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin3.jpg" alt="Gambar Pin - Ilustrasi Biru Gelap">
+                </div>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin4.jpg" alt="Gambar Pin - Poster Toko">
+                </div>
+                <p class="pin-caption">Bikin konten buat poster toko</p>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin5.jpg" alt="Gambar Pin - Hitam Putih Duduk">
+                </div>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin6.jpg" alt="Gambar Pin - Karakter Biru Kuning">
+                </div>
+            </div>
+            
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin7.jpg" alt="Gambar Pin - Karakter Rambut Ungu">
+                </div>
+            </div>
+            
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin8.jpg" alt="Gambar Pin - Karakter Berbaring">
+                </div>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin9.jpg" alt="Gambar Pin - Karakter Merah Oren">
+                </div>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b26_pin10.jpg" alt="Gambar Pin - Karakter Putih Baju Bulu">
+                </div>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b05_pin_kaos.jpg" alt="Gambar Pin - Kaos Oversized">
+                </div>
+                <p class="pin-caption">STREETWEAR OVERSIZED...</p>
+            </div>
+
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b05_pin_sketsa.jpg" alt="Gambar Pin - Sketsa Karakter Chibi">
+                </div>
+            </div>
+            
+            <div class="pin-item">
+                <div class="image-wrapper">
+                    <img src="path/to/image_821b05_pin_clock.jpg" alt="Gambar Pin - Jam Romawi">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    </body>
+</html>
